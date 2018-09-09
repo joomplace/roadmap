@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. JoomPlace, all rights reserved
+  -->
+
+<extension type="component" version="3.x" method="upgrade">
+    <name>com_roadmap</name>
+    <author>Alexandr Kosarev</author>
+    <creationDate>September 2018</creationDate>
+    <copyright>Copyright (c) 2018. JoomPlace, all rights reserved</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>a.kosarev@belitsoft.com</authorEmail>
+    <authorUrl>www.joomplace.com</authorUrl>
+    <version>0.1.0</version>
+    <description>COM_ROADMAP_XML_DESCRIPTION</description>
+    <administration>
+        <menu link="index.php?option=com_roadmap">COM_ROADMAP</menu>
+        <files folder="admin">
+            <filename>roadmap.php</filename>
+            <filename>Dispatcher.php</filename>
+        </files>
+    </administration>
+</extension>
