@@ -7,4 +7,7 @@ namespace Joomplace\Component\Roadmap\Admin;
 
 use Joomplace\X\ComponentStarter;
 
-ComponentStarter::startup(Dispatcher::class, 'Roadmap', __DIR__ . DIRECTORY_SEPARATOR . 'migrations');
+$input = \JFactory::getApplication()->input;
+
+ComponentStarter::startup(Dispatcher::class, $input->get('view', 'Roadmap'),
+    __DIR__ . DIRECTORY_SEPARATOR . 'migrations');
