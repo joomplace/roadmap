@@ -5,6 +5,6 @@
 
 namespace Joomplace\Component\Roadmap\Admin;
 
-echo "<pre>";
-print_r('Say hello to the world of the simpliest components!');
-echo "</pre>";
+use Joomplace\X\ComponentStarter;
+
+ComponentStarter::startup(Dispatcher::class, 'Roadmap', __DIR__ . DIRECTORY_SEPARATOR . 'migrations');
