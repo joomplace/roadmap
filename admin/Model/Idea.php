@@ -11,4 +11,9 @@ use Joomplace\X\Model;
 class Idea extends Model
 {
     protected $fillable = ['title', 'description', 'project_id'];
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 }

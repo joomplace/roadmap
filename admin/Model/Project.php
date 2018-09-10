@@ -11,4 +11,9 @@ use Joomplace\X\Model;
 class Project extends Model
 {
     protected $fillable = ['title', 'description'];
+
+    public function ideas()
+    {
+        return $this->hasMany(Idea::class);
+    }
 }
