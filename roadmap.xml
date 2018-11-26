@@ -16,6 +16,11 @@
     <administration>
         <menu link="index.php?option=com_roadmap">COM_ROADMAP</menu>
         <files folder="admin">
+            <folder>Controller</folder>
+            <folder>migrations</folder>
+            <folder>Model</folder>
+            <folder>tmpl</folder>
+            <folder>view</folder>
             <filename>roadmap.php</filename>
             <filename>Dispatcher.php</filename>
         </files>

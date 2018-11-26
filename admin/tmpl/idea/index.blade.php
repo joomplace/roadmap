@@ -6,7 +6,7 @@ Joomla\CMS\HTML\HTMLHelper::_('behavior.core');
 
 $option = \Joomla\CMS\Factory::getApplication()->input->get('option');
 $model = new $modelClass;
-if ($columns == null) {
+if (empty($columns)) {
     $columns = $model->getFillable();
 }
 $columns = array_filter($columns, function ($c) {
